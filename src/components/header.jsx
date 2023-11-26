@@ -1,5 +1,6 @@
 import React from 'react';
-import './header.css'
+import './header.css';
+import { Link, useLocation } from 'react-router-dom';
 
 const Header = () => {
     return (  
@@ -14,9 +15,9 @@ const Header = () => {
                     <h2 className='text-logo'>Defesa do Consumidor</h2>
                 </div>
                 <nav className='nav-links'>
-                    <a href="#">test</a>
-                    <a href="#">test</a>
-                    <a href="#">test</a>
+                    <Link to="/">Home</Link>
+                    <Link to="/search">Pesquisar</Link>
+                    <Link to="/about">Sobre</Link>
                 </nav>
             </header>
         </>

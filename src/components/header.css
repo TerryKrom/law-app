@@ -1,4 +1,4 @@
-header{
+header {
     width: 100%;
     height: 5rem;
     background-color: #3c545c;
@@ -7,18 +7,18 @@ header{
     align-items: center;
 }
 
-.top-header{
+.top-header {
     background-color: #252525;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.top-header img{
+.top-header img {
     width: 2.5rem;
 }
 
-.logo{
+.logo {
     height: 100%;
     display: flex;
     justify-content: flex-start;
@@ -26,12 +26,12 @@ header{
     width: 40%;
 }
 
-.logo img{
+.logo img {
     width: 5rem;
     margin-left: 20px;
 }
 
-.nav-links{
+.nav-links {
     height: 100%;
     width: 40%;
     display: flex;
@@ -39,12 +39,25 @@ header{
     align-items: center;
 }
 
-.nav-links a{
+.nav-links a {
     text-decoration: none;
     color: #eee;
 }
 
-.text-logo{
+.nav-links a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #fff;
+    transition: width .3s;
+}
+
+.nav-links a:hover::after {
+    width: 100%;
+}
+
+.text-logo {
     color: #eee;
     font-weight: 400;
     margin: 0px 20px 0px 10px;

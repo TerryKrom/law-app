@@ -1,14 +1,13 @@
 header {
     width: 100%;
     height: 5rem;
-    background-color: #3c545c;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
 .top-header {
-    background-color: #252525;
+    background-color: #101010;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -23,12 +22,14 @@ header {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    width: 40%;
 }
 
-.logo img {
-    width: 5rem;
-    margin-left: 20px;
+.text-logo {
+    color: #eee;
+    font-weight: 400;
+    margin: 0px 30px 0px 30px;
+    font-size: 1.3rem;
+    letter-spacing: 2px;
 }
 
 .nav-links {
@@ -37,6 +38,15 @@ header {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    letter-spacing: 1px;
+}
+
+/*Mobile style*/
+
+@media only screen and (max-width: 720px){
+    .nav-links{
+        display: none;
+    }
 }
 
 .nav-links a {
@@ -49,7 +59,7 @@ header {
     display: block;
     width: 0;
     height: 2px;
-    background: #fff;
+    background: var(--main-color);
     transition: width .3s;
 }
 
@@ -57,8 +67,6 @@ header {
     width: 100%;
 }
 
-.text-logo {
-    color: #eee;
-    font-weight: 400;
-    margin: 0px 20px 0px 10px;
+.nav-links a.active::after{
+    width: 100%;
 }

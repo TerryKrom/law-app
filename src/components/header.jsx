@@ -3,6 +3,9 @@ import './header.css';
 import { Link, useLocation } from 'react-router-dom';
 
 const Header = () => {
+    
+    const location = useLocation();
+
     return (  
         <>
             <nav className="top-header">
@@ -11,13 +14,12 @@ const Header = () => {
 
             <header>
                 <div className="logo">
-                    <img src="/images/logo.png" alt="logo" />
-                    <h2 className='text-logo'>Defesa do Consumidor</h2>
+                    <h2 className='text-logo'>Defesa do <span className="highlight">Consumidor</span></h2>
                 </div>
                 <nav className='nav-links'>
-                    <Link to="/">Home</Link>
-                    <Link to="/search">Pesquisar</Link>
-                    <Link to="/about">Sobre</Link>
+                    <Link to="/" className={location.pathname === '/' ? 'active' : ''}>Home</Link>
+                    <Link to="/search" className={location.pathname === '/search' ? 'active' : ''}>Pesquisar</Link>
+                    <Link to="/about" className={location.pathname === '/about' ? 'active' : ''}>Sobre</Link>
                 </nav>
             </header>
         </>

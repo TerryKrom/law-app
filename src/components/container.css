@@ -31,12 +31,8 @@
 }
 
 
-@media only screen and (max-width: 980px){
-    /* .circle{
-        background-color: aqua;
+@media only screen and (max-width: 600px){
+    .container{ 
+        margin: 20px;
     }
-    /* .container{ 
-        /* margin: 20px;
-    }
-    */
 }

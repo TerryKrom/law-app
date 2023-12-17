@@ -6,6 +6,10 @@
   --darker-main-color: #28383d;
 }
 
+*{
+  transition: 0.2s linear;
+}
+
 body {
   margin: 0;
   padding: 0;

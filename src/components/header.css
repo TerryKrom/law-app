@@ -44,9 +44,20 @@ header {
 
 /*Mobile style*/
 
-@media only screen and (max-width: 720px){
-    .nav-links{
+@media only screen and (max-width: 720px) {
+    .nav-links {
         display: none;
+    }
+
+    .burger,
+    .line {
+        display: block !important;
+    }
+}
+
+@media only screen and (max-width: 415px){
+    .text-logo{
+        margin-right: 0px !important;
     }
 }
 
@@ -68,6 +79,78 @@ header {
     width: 100%;
 }
 
-.nav-links a.active::after{
+.nav-links a.active::after {
+    width: 100%;
+}
+
+.burger,
+.line {
+    display: none;
+}
+
+.burger {
+    width: 35px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    margin: 0px 20px 10px 20px;
+}
+
+.line {
+    background-color: #eee;
+    height: 3px;
+    width: 100%;
+    border-radius: 2px;
+    margin-top: 7px;
+}
+
+#burger-menu.open div:first-child {
+    transform: translateY(10px) rotate(45deg);
+}
+
+#burger-menu.open div:nth-child(2) {
+    opacity: 0;
+}
+
+#burger-menu.open div:last-child {
+    transform: translateY(-10px) rotate(-45deg);
+}
+
+
+.menu-hide {
+    display: none;
+}
+
+.menu-hide.open {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    width: 150px;
+    height: 270px;
+    right: 0;
+    background-color: #252525;
+    margin-top: 345px;
+    z-index: 90;
+    animation: emerge 0.5s ease forwards;
+}
+
+.menu-hide a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.menu-hide a::after{
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: var(--main-color);
+    transition: width .3s;   
+}
+
+.menu-hide a:hover::after{
     width: 100%;
 }

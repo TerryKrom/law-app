@@ -1,14 +1,15 @@
 .row{
-    border: 1px solid #fff;
+    /* border: 1px solid #fff; */
     width: 100%;
     height: 80vh;
     display: flex;
     justify-content: space-around;
-    align-items: center;
+    align-items: flex-start;
     color: #eee;
+    flex-wrap: wrap;
 }
 
-.line{
+.intextLine{
     width: 20px;
     height: 1px;
     background-color: #eee;
@@ -29,37 +30,39 @@
     margin: 30px;
     display: flex;
     letter-spacing: 2px;
+    font-size: 1.2rem;
 }
 
 .col-right{
     height: 70vh;
-    margin: 30px 30px 30px 0px;
     display: flex;
-    justify-content: flex-start;
-    align-items: flex-end;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    /* border: 1px solid #fff; */
 }
 
 .col-left{
-    border: 1px solid #fff;
-    flex: 1;
+    /* border: 1px solid #fff; */
+    flex: 1.5;
     height: 70vh;
-    margin: 30px;
     display: flex;
     justify-content: space-evenly;
     flex-direction: column;
 }
 
 .svg{
-    width: 20rem;
+    width: 30rem;
 }
 
 .about-us-text{
     display: flex;
     margin: 30px;
     line-height: 1.7rem;
+    max-width: 500px;
 }
 
-.about-us-text .line{
+.about-us-text .intextLine{
     width: 50px;
 }
 
@@ -73,6 +76,11 @@
     border-radius: 5px;
     font-weight: bold;
     cursor: pointer;
+}
+
+.col-left button a{
+    text-decoration: none;
+    color: #000;
 }
 
 .col-left button:hover{

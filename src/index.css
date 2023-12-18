@@ -3,7 +3,8 @@
 
 :root{
   --main-color: #deb887;
-  --darker-main-color: #28383d;
+  --darker-main-color: #b1926b;
+  /* --darker-main-color: #28383d; */
 }
 
 *{

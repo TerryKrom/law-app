@@ -5,10 +5,16 @@
 }
 
 .inputs{
-    width: 55%;
+    width: 50%;
     display: flex;
     justify-content: center;
-    height: 2.2rem;
+    height: 3rem;
+}
+
+@media only screen and (max-width: 960px){
+    .inputs{
+        width: 80%;
+    }
 }
 
 .search-input{
@@ -28,8 +34,13 @@
     background-color: var(--main-color);
     height: 100%;
     border: none;
-    min-width: 40px;
+    min-width: 50px;
     border-radius: 5px;
+    cursor: pointer;
+}
+
+.search-btn:hover{
+    background-color: var(--darker-main-color);
 }
 
 .search-btn svg{
@@ -41,4 +52,5 @@
     color: #fff;
     font-weight: 400;
     text-align: center;
+    margin-top: 20px;
 }

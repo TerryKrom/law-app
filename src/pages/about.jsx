@@ -1,11 +1,12 @@
 import React from 'react';
 import Header from '../components/header';
+import AboutContainer from '../components/aboutContainer';
 
 const About = () => {
     return (
         <>
             <Header></Header>
-            <h2>Sobre</h2>
+            <AboutContainer></AboutContainer>
         </>
 
     );

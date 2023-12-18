@@ -4,6 +4,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: #131313;
 }
 
 .top-header {
@@ -120,6 +121,7 @@ header {
 
 .menu-hide {
     display: none;
+    animation: none;
 }
 
 .menu-hide.open {
@@ -131,10 +133,10 @@ header {
     width: 150px;
     height: 270px;
     right: 0;
-    background-color: #252525;
+    background-color: #131313;
     margin-top: 345px;
     z-index: 90;
-    animation: emerge 0.5s ease forwards;
+    animation: appear 0.3s ease forwards;
 }
 
 .menu-hide a{
@@ -153,4 +155,15 @@ header {
 
 .menu-hide a:hover::after{
     width: 100%;
+}
+
+@keyframes appear{
+    from{
+        opacity: 0;
+        transform: translateX(300px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
 }

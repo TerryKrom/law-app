@@ -9,7 +9,7 @@ const AboutContainer = () => {
                     Sobre&nbsp;<span className='highlight'>nós</span> <div className="intextLine"></div>
                 </p>
                 <div className="main-text">
-                    <h2>We're committed to providing</h2>
+                    <h2>We're <span className='highlight'>committed</span> to providing</h2>
                     <h2>the best customer service</h2>
                 </div>
                 <p className='about-us-text'>

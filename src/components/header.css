@@ -4,11 +4,11 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #131313;
+    background-color: #101010;
 }
 
 .top-header {
-    background-color: #101010;
+    background-color: #050505;
     display: flex;
     justify-content: center;
     align-items: center;

@@ -17,8 +17,8 @@
 
 .circle{
     background-color: var(--main-color);
-    width: 8.3rem;
-    height: 8.3rem;
+    width: 8.5rem;
+    height: 8.5rem;
     border-radius: 50%;
     display: flex;
     justify-content: center;

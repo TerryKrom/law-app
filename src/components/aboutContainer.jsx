@@ -21,7 +21,7 @@ const AboutContainer = () => {
 
             </div>
             <div className="col-right">
-                {/* <img src="/images/right-svg.svg" alt="" className='svg' /> */}
+                <img src="/images/right-svg.svg" alt="" className='svg' />
             </div>
         </div>
     );

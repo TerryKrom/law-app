@@ -133,8 +133,8 @@ header {
     width: 150px;
     height: 270px;
     right: 0;
-    background-color: #131313;
-    margin-top: 345px;
+    background-color: #101010;
+    margin-top: 350px;
     z-index: 90;
     animation: appear 0.3s ease forwards;
 }

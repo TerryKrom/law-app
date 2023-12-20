@@ -45,11 +45,12 @@
 
 .col-left{
     /* border: 1px solid #fff; */
-    flex: 1.5;
+    flex: 2;
     height: 70vh;
     display: flex;
     justify-content: space-evenly;
     flex-direction: column;
+    min-width: 30rem;
 }
 
 .svg{
